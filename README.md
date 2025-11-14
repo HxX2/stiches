@@ -72,26 +72,13 @@ stiches/
 bunx create-next-app -e https://github.com/HxX2/stiches
 ```
 
-Or clone the repository manually:
-
-```bash
-git clone https://github.com/HxX2/stiches.git
-cd stiches
-```
-
-2. Install dependencies:
-
-```bash
-bun install
-```
-
-3. Copy environment variables (optional):
+2. Copy environment variables (optional):
 
 ```bash
 cp .env.example .env
 ```
 
-4. Run the development server:
+3. Run the development server:
 
 ```bash
 bun dev

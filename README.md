@@ -2,7 +2,8 @@
   <img src=".github/stiches-logo.svg" alt="Stiches Logo" width="200" />
 </p>
 
-<h1 style="border-bottom: none;" align="center">Stiches</h1>
+<p align="center" style="font-size: 2em; font-weight: bold; margin: 0.67em 0;">Stiches</p>
+
 <p align="center">A modern Next.js template with beautiful animations and a comprehensive UI component library.</p>
 
 <br>

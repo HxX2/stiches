@@ -4,6 +4,7 @@ import { SiGithub } from 'react-icons/si';
 
 import { title, subtitle } from "@/consts/primitives";
 import { fontMono } from "@/config/fonts";
+import { siteConfig } from "@/config/site";
 import { Button } from "@heroui/button";
 import { AnimatedLogo } from "@/components/animated-logo";
 import { AnimatedIcons } from "@/components/animated-icons";
@@ -30,7 +31,16 @@ export default function Home() {
       </div>
 
       <div className="flex gap-3 relative z-10">
-        <Button color="default" radius="full" startContent={<SiGithub size={16}/>} variant="shadow">
+        <Button 
+          as="a"
+          href={siteConfig.links.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          color="default" 
+          radius="full" 
+          startContent={<SiGithub size={16}/>} 
+          variant="shadow"
+        >
           GitHub
         </Button>
       </div>

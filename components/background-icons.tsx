@@ -5,14 +5,14 @@ import { motion, useMotionValue, useSpring } from 'motion/react';
 import { useState } from 'react';
 
 const icons = [
-  { src: '/bun.svg', name: 'Bun', url: 'https://bun.sh/docs', position: 'top-10 left-40', duration: 4, x: [-8, 5, -3, -8], y: [-3, 8, -6, -3] },
-  { src: '/heroui.svg', name: 'HeroUI', url: 'https://www.heroui.com/docs', position: 'top-65 right-16', duration: 4.5, x: [-4, 9, -2, -4], y: [-6, 2, 7, -6] },
-  { src: '/motion.svg', name: 'Motion', url: 'https://motion.dev/docs', position: 'bottom-32 left-30', duration: 5, x: [-6, 3, 8, -6], y: [-4, 9, -2, -4] },
-  { src: '/next.svg', name: 'Next.js', url: 'https://nextjs.org/docs', position: 'top-1/2 left-10', duration: 4.2, x: [-7, 4, -9, -7], y: [-5, 6, 3, -5] },
-  { src: '/react-icons.svg', name: 'React Icons', url: 'https://react-icons.github.io/react-icons/', position: 'bottom-20 right-32', duration: 4.8, x: [-3, 8, 2, -3], y: [-7, 4, -9, -7] },
-  { src: '/tailwind.svg', name: 'Tailwind CSS', url: 'https://tailwindcss.com/docs', position: 'top-1/4 left-3', duration: 5.3, x: [-5, 7, -8, -5], y: [-8, 3, 6, -8] },
-  { src: '/ts.svg', name: 'TypeScript', url: 'https://www.typescriptlang.org/docs/', position: 'bottom-1/3 right-12', duration: 4.6, x: [-4, 6, 9, -4], y: [-6, 8, -3, -6] },
-  { src: '/google-fonts.svg', name: 'Google Fonts', url: 'https://fonts.google.com/', position: 'top-20 right-40', duration: 4.4, x: [-5, 6, -7, -5], y: [-4, 7, -2, -4] },
+  { src: '/bun.svg', name: 'Bun', url: 'https://bun.sh/docs', position: 'top-10 left-40', duration: 4, x: [-8, 5, -3, -8], y: [-3, 8, -6, -3], rotation: -14 },
+  { src: '/heroui.svg', name: 'HeroUI', url: 'https://www.heroui.com/docs', position: 'top-65 right-16', duration: 4.5, x: [-4, 9, -2, -4], y: [-6, 2, 7, -6], rotation: 7 },
+  { src: '/motion.svg', name: 'Motion', url: 'https://motion.dev/docs', position: 'bottom-32 left-30', duration: 5, x: [-6, 3, 8, -6], y: [-4, 9, -2, -4], rotation: 14 },
+  { src: '/next.svg', name: 'Next.js', url: 'https://nextjs.org/docs', position: 'top-1/2 left-10', duration: 4.2, x: [-7, 4, -9, -7], y: [-5, 6, 3, -5], rotation:  -7 },
+  { src: '/react-icons.svg', name: 'React Icons', url: 'https://react-icons.github.io/react-icons/', position: 'bottom-20 right-32', duration: 4.8, x: [-3, 8, 2, -3], y: [-7, 4, -9, -7], rotation: -14 },
+  { src: '/tailwind.svg', name: 'Tailwind CSS', url: 'https://tailwindcss.com/docs', position: 'top-1/4 left-3', duration: 5.3, x: [-5, 7, -8, -5], y: [-8, 3, 6, -8], rotation: 7 },
+  { src: '/ts.svg', name: 'TypeScript', url: 'https://www.typescriptlang.org/docs/', position: 'bottom-1/3 right-12', duration: 4.6, x: [-4, 6, 9, -4], y: [-6, 8, -3, -6], rotation: 14 },
+  { src: '/google-fonts.svg', name: 'Google Fonts', url: 'https://fonts.google.com/', position: 'top-20 right-40', duration: 4.4, x: [-5, 6, -7, -5], y: [-4, 7, -2, -4], rotation: -7 },
 ];
 
 export const BackgroundIcons = () => {
@@ -66,7 +66,8 @@ export const BackgroundIcons = () => {
           onMouseEnter={() => setHoveredIcon(icon.name)}
           onMouseLeave={() => setHoveredIcon(null)}
           onMouseMove={handleMouseMove}
-          className={`absolute ${icon.position} opacity-90 cursor-pointer pointer-events-auto rotate-[-7deg]`}
+          className={`absolute ${icon.position} opacity-90 cursor-pointer pointer-events-auto`}
+          style={{ rotate: `${icon.rotation}deg` }}
         >
           <Image src={icon.src} alt="" width={70} height={70} />
         </motion.a>

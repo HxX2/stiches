@@ -87,7 +87,7 @@ cp .env.example .env
 bun dev
 ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## 📝 Available Scripts
 
@@ -131,7 +131,7 @@ To add new icons from the React Icons library:
 1. Import the icon from the desired icon pack:
 
 ```tsx
-import { HiSparkles, HiRocket } from "react-icons/hi2"; // Heroicons 2
+import { HiSparkles, HiBolt } from "react-icons/hi2"; // Heroicons 2
 import { SiGithub, SiDocker } from "react-icons/si"; // Simple Icons
 import { FaReact, FaNodeJs } from "react-icons/fa"; // Font Awesome
 ```
@@ -139,7 +139,7 @@ import { FaReact, FaNodeJs } from "react-icons/fa"; // Font Awesome
 2. Use the icon component with optional props:
 
 ```tsx
-<HiRocket size={24} className="text-primary" />
+<HiBolt size={24} className="text-primary" />
 ```
 
 See [React Icons documentation](https://react-icons.github.io/react-icons/) for the complete icon library.

@@ -100,7 +100,7 @@ bun dev
 
 ### Colors
 
-The project uses a custom color scheme with `secondary-400` (#B10F2E) as the primary brand color. Modify colors in `tailwind.config.mjs`.
+The project uses a custom color scheme with `secondary` (#B10F2E) as the brand color. Modify colors in `tailwind.config.mjs`.
 
 For comprehensive theme customization, use the [HeroUI Theme Builder](https://www.heroui.com/themes) to generate a complete color palette and design system for your entire team.
 

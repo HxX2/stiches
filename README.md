@@ -11,8 +11,8 @@
 ## 🚀 Tech Stack
 
 - **[Next.js 16](https://nextjs.org/)** - React framework with App Router
-- **[React 18](https://react.dev/)** - UI library
-- **[HeroUI v2](https://heroui.com/)** - Component library (React 18 compatible)
+- **[React 19](https://react.dev/)** - UI library
+- **[HeroUI v2](https://heroui.com/)** - Component library
 - **[Tailwind CSS 4](https://tailwindcss.com/)** - Utility-first CSS framework
 - **[Motion](https://motion.dev/)** - Animation library (successor to Framer Motion)
 - **[TypeScript 5.6](https://www.typescriptlang.org/)** - Type safety

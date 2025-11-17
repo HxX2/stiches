@@ -1,5 +1,3 @@
 export default function VoidPage() {
-  return (
-      <div className="" />
-  );
+  return <div className="" />;
 }

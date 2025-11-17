@@ -19,11 +19,7 @@ export default function Error({
   return (
     <div className="flex flex-col items-center justify-center min-h-screen gap-4">
       <h2 className="text-2xl font-bold">Something went wrong!</h2>
-      <Button
-        onPress={() => reset()}
-        color="primary"
-        size="lg"
-      >
+      <Button color="primary" size="lg" onPress={() => reset()}>
         Try again
       </Button>
     </div>

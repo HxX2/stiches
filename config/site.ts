@@ -7,13 +7,13 @@ export const siteConfig = {
     {
       label: "Void",
       href: "/void",
-    }
+    },
   ],
   navMenuItems: [
     {
       label: "Void",
       href: "/void",
-    }
+    },
   ],
   links: {
     github: "https://github.com/HxX2/stiches",
